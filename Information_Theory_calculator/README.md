@@ -1,10 +1,6 @@
 # Information Theory
 
-Information Theory, pioneered by Claude Shannon, is a field that studies the quantification, storage, and communication of information. 
-
-We will create a calculator that calculates the entropy, cross-encropy and KL divergence loss.
-
-Let's explore some fundamental concepts:
+Information Theory, pioneered by Claude Shannon, is a field that studies the quantification, storage, and communication of information. Let's explore some fundamental concepts:
 
 ## Information Content 💰
 
@@ -56,7 +52,7 @@ graph TD
 
 Example: For our weather forecast, the average amount of information transferred is as following:
 
-Weathe forecast 🌡️, $75 \% * 0.41 + 25\% * 2 = 0.81$ bits
+Weather forecast 🌡️, 75% * 0.41 + 25% * 2 = 0.81 bits
 
 ## Cross-Entropy: Evaluating Predictions ⚖️
 
