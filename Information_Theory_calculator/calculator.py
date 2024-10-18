@@ -8,7 +8,7 @@ def cross_enctropy(p, q):
     return -np.sum(p * np.log2(q + 1e-12))
 
 def kl_divergence(p, q):
-    return np.sum(p * np.log2((p + 1e-12) / (1 + 1e-12)))
+    return np.sum(p * np.log2((p + 1e-12) / (q + 1e-12)))
 
 def validate_distribution(p):
     return np.isclose(np.sum(p), 1.0) and np.all(p >= 0)
