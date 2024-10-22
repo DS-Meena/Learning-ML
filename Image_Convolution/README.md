@@ -73,7 +73,7 @@ This kernel can be normalized by dividing each element by the sum of all the ele
 
 It is also possible to connect a large input layer to a much smaller layer by spacing out the receptive fields. The shift from one receptive field to the next is called the stride.
 
-$(i, j)$ neuron is connected to $(i*s_h, i*s_h + f_h - 1) * (j*s_w, j*s_w + f_w - 1)$
+$(i, j)$ neuron is connected to $(i\star s_h, i\star s_h + f_h - 1) * (j\star s_w, j\star s_w + f_w - 1)$
 
 $s_h, s_w$ are vertical and horizontal strides.
 
@@ -127,7 +127,7 @@ Pooling is commonly used in convolutional neural networks (CNNs) for image class
 
 *Fig: Max pooling layer (2 × 2 pooling kernel, stride 2, no padding)*
 
-**Example →** *Suppose that kernel size is $3x3$, and our stride is $S=2$.  If we have a $45×25$ input image, what will be the number of datapoints in the down sampled image after applying this pooling operation?* 
+**Example →** Suppose that kernel size is $3x3$, and our stride is $S=2$.  If we have a $45×25$ input image, what will be the number of datapoints in the down sampled image after applying this pooling operation?
 
 **Solution →** Using our formula, we will have 
 $(\frac{45−3}{2}+1)(\frac{25−3}{2}+1)=264$ samples from the image. 
