@@ -35,9 +35,9 @@ graph TD
 
 Neurons in first convolutional layer are not connected to every single pixel in the input image 📸, but only to pixels in their **receptive fields**. This architecture allows the network to concentrate on small low-level features in the first hidden layer, then assemble them into larger higher-level features in the next hidden layer, and so on
 
-![Fig: Connection between layers and zero padding](image-2.png)
+![Fig: Connection between layers and zero padding](images/image-2.png)
 
-*Fig: Connection between layers and zero padding*
+*Fig: Applying convolution with zero padding*
 
 $(i, j)$ neuron of a given layer is connected to $(i, i+f_h-1) * (j, j+f_w-1)$ neurons of previous layer.
 
@@ -78,7 +78,7 @@ $(i, j)$ neuron is connected to $(i*s_h, i*s_h + f_h - 1) * (j*s_w, j*s_w + f_w 
 $s_h, s_w$ are vertical and horizontal strides.
 
 
-![Fig: Reducing dimensionality using a stride of 2](image-3.png)
+![Fig: Reducing dimensionality using a stride of 2](images/image-3.png)
 
 *Fig: Reducing dimensionality using a stride of 2*
 
@@ -88,7 +88,7 @@ Size of resultant feature map = $(\frac {W - f_w}{S_w} + 1) * (\frac {H - f_h}{S
 
 We pad the image on sides so that we can catch partial objects.
 
-![Fig: applied p=1 on image](image.png)
+![Fig: applied p=1 on image](images/image.png)
 
 *Fig: applied p=1 on "+" sign*
 
@@ -123,7 +123,7 @@ Pooling helps to reduce the spatial dimensions of the input, which can reduce th
 
 Pooling is commonly used in convolutional neural networks (CNNs) for image classification and other computer vision tasks.
 
-![Fig: Max pooling layer (2 × 2 pooling kernel, stride 2, no padding)](image-4.png)
+![Fig: Max pooling layer (2 × 2 pooling kernel, stride 2, no padding)](images/image-4.png)
 
 *Fig: Max pooling layer (2 × 2 pooling kernel, stride 2, no padding)*
 
@@ -148,13 +148,13 @@ Max pooling is generally used over average pooling since it has performed better
 
 Example →
 
-![Fig: Max pooling (Source: [Papers with code](https://paperswithcode.com/method/max-pooling))](image-5.png)
+![Fig: Max pooling (Source: [Papers with code](https://paperswithcode.com/method/max-pooling))](images/image-5.png)
 
 *Fig: Max pooling (Source: [Papers with code](https://paperswithcode.com/method/max-pooling))*
 
 A max pooling layer also introduces some level of invariance to small translations. But in some applications invariance is not desirable like semantic segmentation.
 
-![Fig: Invariance to small translations](image-6.png)
+![Fig: Invariance to small translations](images/image-6.png)
 
 *Fig: Invariance to small translations*
 
@@ -176,7 +176,7 @@ Average pooling helps to reduce the spatial dimensions of the input and can help
 
 Example →
 
-![Fig: Average Pooling (Source: [Papers with code](https://paperswithcode.com/method/average-pooling))](image-7.png)
+![Fig: Average Pooling (Source: [Papers with code](https://paperswithcode.com/method/average-pooling))](images/image-7.png)
 
 *Fig: Average Pooling (Source: [Papers with code](https://paperswithcode.com/method/average-pooling))*
 
@@ -188,7 +188,7 @@ global_avg_pool = keras.layers.GlobalAvgPool2D()
 
 # Using multiple convolutional step 🪜
 
-![Fig: Feature matrix at first step](image-1.png)
+![Fig: Feature matrix at first step](images/image-1.png)
 
 *Fig: Feature matrix at first step*
 
