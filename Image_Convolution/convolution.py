@@ -64,14 +64,14 @@ def show_images(images, titles):
             img = np.squeeze(img) # Remove single-dimensional entries
         
         row, col = i//cols,i%cols        
-        axs[row, col].imshow(img, cmap='gray')
+        axs[row, col].imshow(img)
         axs[row, col].set_title(title)
         axs[row, col].axis('off')
 
     plt.tight_layout()
-    plt.savefig("Custom-filters-gray.png")
+    plt.savefig("Custom-filters.png")
     plt.close()
 
 # Display results
-show_images([china[0], gaussian_output[0], edge_output[0], sharpen_output[0], vertical_output[0], horizontal_output[0], pool_output[0, :, :, 0]],
+show_images([china[0], gaussian_output[0], edge_output[0], sharpen_output[0], vertical_output[0], horizontal_output[0], pool_output[0]],
             ['Original', 'Gaussian Blur', 'Edge Detection', 'Sharpened', 'Vertical Lines', 'Horizontal Lines', 'Edge Detection + Pooling'])
