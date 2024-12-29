@@ -13,3 +13,7 @@ This will create a `.venv` folder in your project. This will have your installed
 To activate enviornment: `source .venv/bin/activate` and to deactivate enviornment: `deactivate`
 
 To get all the dependencies for your project, generate a requirements.txt file using `pip freeze > requirements.txt`. You can later use this file to install all the dependencies of your project in another folder using `pip install -r requirements.txt`.
+
+// check
+// update git blog 
+// about how to remove file from staging area
