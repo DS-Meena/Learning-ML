@@ -1,4 +1,8 @@
-### Building a Statistical Language Model (SLM) 🧠
+# Statistical Language Model
+
+A SLM generates sentences based on the statistics or n-gram frequency.
+
+## Building a Statistical Language Model (SLM) 🧠
 
 1. **Data Collection** 📚:
     - Gather a large and relevant corpus of text data. This can be from books, articles, websites, etc.
@@ -17,7 +21,7 @@
     - For a bigram model, the probability of a word given the previous word can be calculated as:
     $P(w_n | w_{n-1}) = \frac{\text{Count}(w_{n-1}, w_n)}{\text{Count}(w_{n-1})}$
 
-### Training the Model 🏋️
+## Training the Model 🏋️
 
 1. **Smoothing**:
     - Apply smoothing techniques to handle zero probabilities (unseen N-grams). Common techniques include Add-One (Laplace) Smoothing, Good-Turing Smoothing, etc.
@@ -27,3 +31,20 @@
 3. **Iterate**:
     - Based on the evaluation, iterate on your preprocessing steps, N-gram size, and smoothing techniques to improve the model's performance.
 
+# Results ❤️‍🔥
+
+For a given corpus  ["I love coding", "I love programming", "I enjoy learning"], when I tried to generate sentence with starting word as "i" I get "i love" as result.
+ 
+input: "i"
+
+output: "i love"
+
+```bash
+tokenized_sentences: [['i', 'love', 'coding'], ['i', 'love', 'programming'], ['i', 'enjoy', 'learning']]
+bigrams: [('i', 'love'), ('love', 'coding'), ('i', 'love'), ('love', 'programming'), ('i', 'enjoy'), ('enjoy', 'learning')]
+
+bigrams_freq: Counter({('i', 'love'): 2, ('love', 'coding'): 1, ('love', 'programming'): 1, ('i', 'enjoy'): 1, ('enjoy', 'learning'): 1})
+
+next_word_candidates and next_word_probabilities for "i" as current word:
+['love', 'enjoy'] [0.3333333333333333, 0.2222222222222222]
+```
