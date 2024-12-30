@@ -1,3 +1,5 @@
+# Neural Language Model
+
 ## Building a LSTM model to generate poems
 
 ### 1. Finding Data 📚
@@ -80,11 +82,3 @@ This file has the code to train the model. I trained for 50 epochs and used 20% 
 ## Kaggle Notebook 📒
 
 You can also check the corresponding notebook at kaggle: [Love Poems using LSTM](https://www.kaggle.com/code/dsmeena/love-poems-using-lstm/notebook)
-
-# Results ❤️‍🔥
-
-This is still far better than Statistical models (n-grams).
-
-**Input**: "Love is"
-
-**Output**: "Love is a sickness full of woes a race the colour that the size all which the prease of the purest sky for this a wishfull vow of the ground beneath her eyelids she or are times lord the world subdue both that that water with her eyes the fyre of woe"

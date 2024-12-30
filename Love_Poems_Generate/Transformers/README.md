@@ -50,7 +50,7 @@ Character-level encoding breaks down text into individual characters. It's like 
     - For creative text generation tasks, like poetry or song lyrics 🎵
 
 Example:
-```
+```bash
 text = """
 Roses are red,
 Violets are blue,
@@ -72,7 +72,7 @@ For our task, First I tried to use character level encoding, so that it can play
 
 
 input sequences:
-```
+```bash
 [[141, 1000],
  [141, 1000, 28],
  [141, 1000, 28, 865],
@@ -85,7 +85,7 @@ input sequences:
  [141, 1000, 28, 865, 63, 9, 676, 112, 1, 76, 15]]
 ```
 Padded sequences
-```
+```bash
 array([[   0,    0,    0, ...,    0,  141, 1000],
        [   0,    0,    0, ...,  141, 1000,   28],
        [   0,    0,    0, ..., 1000,   28,  865]], dtype=int32)
