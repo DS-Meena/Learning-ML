@@ -14,3 +14,5 @@ To add drop down section in markdown files use following HTML tags:
 Your content
 </details>
 ```
+
+To add indentation inside a section: `<div style="margin-left: 20px">`
