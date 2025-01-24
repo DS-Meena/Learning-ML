@@ -1,29 +1,24 @@
 
 # Probabilistic theory 🔨🔨🔨🔨🔨🔨🔨
 
-# Operation on Probabilities ⭕
+In this section we will learn about concepts related to likelihood of events i.e. Probability.
 
----
+# Operation on Probabilities ⭕
 
 ### Basic Probability Operations 😵‍💫
 
 For two events A and B, we have these fundamental operations:
 
-| Union | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
- |
+| Operation | Formula | 
 | --- | --- |
-| Intersection | // Dependent events
-$P(A \cap B) = P(A|B) \cdot P(B)$
-
-// Independent events
-$P(A \cap B) = P(A) \cdot P(B)$ |
+| Union | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| Intersection | Dependent events $P(A \cap B) = P(A \lvert B) \cdot P(B)$  |
+| | Independent events $P(A \cap B) = P(A) \cdot P(B)$ | 
 | Complement (NOT) | $P(A') = 1 - P(A)$ |
 
 These operations form the foundation for more complex probability calculations and are essential for solving real-world probability problems.
 
 # Probabilistic Independence 🎌
-
----
 
 ## Independent Events 👆
 
@@ -46,8 +41,6 @@ For example:
 - The probability of rolling a six three times in a row with a fair die: $\frac{1}{6} \cdot \frac{1}{6} \cdot \frac{1}{6} = \frac{1}{216}$
 
 # Conditional Probabilities 🫙
-
----
 
 Conditional probability is a measure of the probability of an event occurring, given that another event has already occurred. 
 
@@ -91,8 +84,6 @@ Where:
 
 # Probability density function (PDF) 🦷
 
----
-
 A PDF (Probability Density Function) is a mathematical function that:
 
 - Describes the relative likelihood of a continuous random variable taking on a specific value
@@ -117,14 +108,11 @@ E.g. - area of a triangle.
 
 ## Calculating Probability, Mean, and Variance using PDF 🧮
 
-| Probability | $P(c \leq X \leq d) = \int_c^d f(x)dx$
-
- |
+| Measure | Formula | 
 | --- | --- |
-| Mean (expected value) | $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
- |
-| Variance | $\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$
- |
+| Probability | $P(c \leq X \leq d) = \int_c^d f(x)dx$ |
+| Mean (expected value) | $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$ |
+| Variance | $\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$ |
 
 Note → Integrate together.
 
@@ -146,95 +134,67 @@ $\mu = \int_0^4 x\cdot\frac{1}{4}dx = \frac{1}{4}[\frac{x^2}{2}]_0^4 = \frac{16-
 
 $\sigma^2 = \int_0^4 (x-2)^2\cdot\frac{1}{4}dx = \frac{16}{12} \approx 1.33$
 
-- Example 2
-    
-    $f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 0, & \text{otherwise} \end{cases}$
-    
-    what is the mean value of **X**?
-    
-    Solution:
-    
-    $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
-    
-    $E(X) = \int_{0}^{2} xf(x)dx$
-    
-    $E(X) = \int_{0}^{2} x \frac{x^3}4dx$ ⇒ $E(X) = \int_{0}^{2} \frac{x^4}4dx$
-    
-    $E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
-    
-- Example 3 (find mean, variance)
-    
-    X has following density function:
-    
-    $f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 0, & \text{otherwise} \end{cases}$
-    
-    Find mean and variance?
-    
-    $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
-    
-    $\mu = \int_{0}^{1}x f(x) dx = \int_{0}^{1} x * 2x dx = \int_{0}^{1} 2x^2 dx = \frac{2}{3} [x^3]_0^1 = \frac{2}{3}$
-    
-    variance
-    
-    $\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$
-    
-    $\sigma^2 = \int_{0}^{1} (x-2/3)^2 2xdx = \int_0^1 (x^2 + 4/9 - 4x/3) 2x dx = \int_0^1 2x^3 + \frac{8x}{9} - \frac{8x^2}{3}dx = \frac{2}{4}[x^4]_0^1 + \frac{8}{9}[x^2]_0^1 - \frac{4}{3}[x^3]_0^1 = 2/4 + 8/18 - 8/9 = \frac{18+16-32}{36} = \frac{1}{18}$
-    
-- Example 4 (find constant and probability)
-    
-    Let X be a continuous random variable with PDF given by:
-    
-    $f(x) = \begin{cases} cx^2, & |x|<2 \\ 0, & \text{otherwise} \end{cases}$
-    
-    find c and probability(x≥1)?
-    
-    Solution:
-    
-    We know the the area under PDF is 1. That means total probability sum is equals to 1.
-    
-    $P = \int_{-2}^2cx^2dx = 1$
-    
-    $\frac{c}{3} [x^3]_{-2}^2 = 1 => \frac{c}{3} [8+8] = 1 => c = \frac{3}{16}$
-    
-    $P(X>=1) = \int_1^2 f(x)dx$
-    
-    $P(X>=1) = \int_1^2 \frac{3}{16}x^2dx = \frac{3}{16.3} [x^3]_1^2 = \frac{7}{16}$
-    
+<details>
+<summary>Example 2</summary>
 
-## Integration by Substitution 🔄
+$f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 0, & \text{otherwise} \end{cases}$
+    
+what is the mean value of **X**?
 
-Integration by substitution is a method used to evaluate integrals by simplifying them through a change of variable. The basic formula is:
+Solution:
 
-$\int f(g(x))g'(x)dx = \int f(u)du$
+$\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
 
-where u = g(x)
+$E(X) = \int_{0}^{2} xf(x)dx$
 
-Steps to follow:
+$E(X) = \int_{0}^{2} x \frac{x^3}4dx$ ⇒ $E(X) = \int_{0}^{2} \frac{x^4}4dx$
 
-1. Choose a substitution u = g(x)
-2. Calculate du/dx = g'(x)
-3. Solve for dx: dx = du/g'(x)
-4. Substitute these into the original integral
-5. Solve the new integral in terms of u
-6. Substitute back x in terms of u
-- Example:
+$E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
+
+</details>
+
+<details>
+<summary>Example 3 (find mean, variance)</summary>
+
+X has following density function:
+
+$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 0, & \text{otherwise} \end{cases}$
+
+Find mean and variance?
+
+$\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
+
+$\mu = \int_{0}^{1}x f(x) dx = \int_{0}^{1} x * 2x dx = \int_{0}^{1} 2x^2 dx = \frac{2}{3} [x^3]_0^1 = \frac{2}{3}$
+
+variance
+
+$\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$
+
+$\sigma^2 = \int_{0}^{1} (x-2/3)^2 2xdx = \int_0^1 (x^2 + 4/9 - 4x/3) 2x dx = \int_0^1 2x^3 + \frac{8x}{9} - \frac{8x^2}{3}dx = \frac{2}{4}[x^4]_0^1 + \frac{8}{9}[x^2]_0^1 - \frac{4}{3}[x^3]_0^1 = 2/4 + 8/18 - 8/9 = \frac{18+16-32}{36} = \frac{1}{18}$
+</details>    
+
+<details>
+<summary>Example 4 (find constant and probability)</summary>
+Let X be a continuous random variable with PDF given by:
     
-    Evaluate $\int x\sin(x^2)dx$
-    
-    Solution:
-    
-    Let u = x²
-    
-    Then du = 2x dx
-    
-    Therefore, x dx = du/2
-    
-    $\int x\sin(x^2)dx = \frac{1}{2}\int \sin(u)du = -\frac{1}{2}\cos(u) + C = -\frac{1}{2}\cos(x^2) + C$
-    
+$f(x) = \begin{cases} cx^2, & |x|<2 \\ 0, & \text{otherwise} \end{cases}$
+
+find c and probability(x≥1)?
+
+Solution:
+
+We know the the area under PDF is 1. That means total probability sum is equals to 1.
+
+$P = \int_{-2}^2cx^2dx = 1$
+
+$\frac{c}{3} [x^3]_{-2}^2 = 1 => \frac{c}{3} [8+8] = 1 => c = \frac{3}{16}$
+
+$P(X>=1) = \int_1^2 f(x)dx$
+
+$P(X>=1) = \int_1^2 \frac{3}{16}x^2dx = \frac{3}{16.3} [x^3]_1^2 = \frac{7}{16}$
+</details>
 
 # Probability Distribution 📊
-
----
 
 A probability distribution is a function that maps events to their probabilities. It describes the likelihood of each possible outcome in a given set of events. Probability distributions can be either discrete or continuous, depending on the nature of the events. 
 
@@ -258,11 +218,9 @@ The PDF of the uniform distribution is given by the following equation:
 
 where $a$ and $b$ are the minimum and maximum values of the distribution.
 
- 
-
 For a uniform distribution between a and b, the probability density is constant at 1/(b-a) within the interval [a,b], and 0 outside this interval.
 
-![maxresdefault.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5989232b-4798-4c63-ac9f-04cb2f5fb1a8/7e04a257-ffe1-4af0-b3fa-3212d396eda0/maxresdefault.jpg)
+![Uniform distribution](images/maxresdefault.jpg)
 
 This graph shows a uniform distribution over [0,4] where the probability density is constant at 0.25 within the interval and 0 outside it.
 
@@ -286,7 +244,7 @@ The PMF of the Poisson distribution is given by the following equation:
 
 where $\lambda$ is the average rate of occurrence of the event of interest and $k$ is the number of occurrences. 
 
-![Poisson-distribution-graph.webp](https://prod-files-secure.s3.us-west-2.amazonaws.com/5989232b-4798-4c63-ac9f-04cb2f5fb1a8/1448a88a-c107-4daa-b698-4f7b50d1536c/Poisson-distribution-graph.webp)
+![Poisson Distribution](images/image.png)
 
 Here's an example of using the Poisson distribution:
 
@@ -340,23 +298,17 @@ $Var(X) = np(1-p)$
 
 where: 
 
-$n$ is the number of trials,
+    n is the number of trials,
+    p is the probability of success in each trial, and 
+    k is the number of successes.
 
- $p$ is the probability of success in each trial, and 
+![Binomial Distribution](images/binomial%20distribution.jpg)
 
-$k$ is the number of successes.
+> 💡 Let's solve this example: For 10 coin flips, what's the probability of getting exactly 5 heads?
 
-![DDM_INV_binomial-distribution_df-530704a61bc2464c8e7deb71e9deb5ae.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/5989232b-4798-4c63-ac9f-04cb2f5fb1a8/a0e2fa1a-c072-4912-8053-edb803ec65b7/DDM_INV_binomial-distribution_df-530704a61bc2464c8e7deb71e9deb5ae.jpg)
-
-<aside>
-💡
-
-Let's solve this example: For 10 coin flips, what's the probability of getting exactly 5 heads?
-
-Using the binomial formula with n=10 (trials), k=5 (successes), and p=0.5 (probability of heads):
+> Using the binomial formula with n=10 (trials), k=5 (successes), and p=0.5 (probability of heads):
 P(X=5) = C(10,5) × (0.5)^5 × (0.5)^5 = 252/1024 ≈ 0.246
 
-</aside>
 
 So in short, the binomial distribution is a way to calculate the probability of a certain number of successes in a fixed number of trials, when there are only two possible outcomes.
 
@@ -410,7 +362,7 @@ If the standard deviation is large, the curve is wide and shallow; while if it's
 
 For example, let's say you wanted to know the probability of a person's height falling within a certain range, like between 5'8" and 5'10". You could use the normal distribution to calculate this probability.
 
-!https://analystprep.com/cfa-level-1-exam/wp-content/uploads/2019/10/page-123.jpg
+![Normal Distribution](images/normal.jpg)
 
 So, if the mean height of a population is 5'6" with a standard deviation of 2", then the normal distribution curve would be centered around 5'6" and would be relatively wide, since the standard deviation is 2". This means that there would be a higher probability of people falling within a wider range of heights.
 
@@ -441,44 +393,7 @@ print(f"P(X < {x}) = {probability:.4f}")
 # Output: P(X < 1.5) = 0.9332
 ```
 
-Common probability calculations in Normal distribution:
-
-- P(X < a): Use cumulative distribution function (CDF)
-- P(X > a): Use 1 - CDF
-- P(a < X < b): Calculate CDF(b) - CDF(a)
-
-- **Exponential distribution**: The PDF of the exponential distribution is given by the following equation:
-    
-     $f(x; \lambda) = \begin{cases} \lambda e^{-\lambda x}, & x \ge 0 \\ 0, & x < 0 \end{cases}$ 
-    
-    where $\lambda$ is the rate parameter.
-    
-- **Gamma distribution**: The PDF of the gamma distribution is given by the following equation:
-    
-     $f(x;k,\theta) = \frac{1}{\Gamma(k)\theta^k} x^{k-1} e^{-\frac{x}{\theta}}$ 
-    
-    where $k$ is the shape parameter and $\theta$ is the scale parameter.
-    
-
-Example:
-
-Initialize the parameters of a fully-connected layer with a Gaussian random initialization of mean 0 and invariance 25.
-
- 
-
-```python
-init = np.random.randn() # Generates random numbers from standard normal distribution
-init = 5*init # Scales the values by multiplying by 5
-```
-
-The code has two steps:
-
-- First, np.random.randn() generates random numbers from a standard normal distribution with mean 0 and standard deviation 1
-- Then, multiplying by 5 scales the distribution. This changes the standard deviation to 5 (while keeping mean at 0), which means the variance becomes 25 since variance is the square of standard deviation.
-
 # Generative and discriminative models
-
----
 
 ## Discriminative models
 
