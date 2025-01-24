@@ -10,7 +10,7 @@ Image convolution is a image filtering technique.
 
 Suppose we have N x N matrices A and B. We define $A \circ B$ as follows, where $\circ$ is the convolutional operator. 
 
-$(A \circ B)_{i,j} = A_{i,j}B_{i,j}$
+$(A\circ B)_{i,j} =A_{i,j} B_{i,j}$
 
 The activation of a filter on an image of the same size is found by applying the convolutional operator to the filter and the image, then taking the sum of the entries in the resulting matrix, adding the filter's bias, and applying an activation function to it. 
 
@@ -197,6 +197,8 @@ When actually creating a CNN, we will want to have multiple filters to recognize
 This means that our output matrix has a **volume**: if we have K $N × N$ filters and apply them to a $W × H$ image with P padding and S stride length, our output matrix will have dimensions $(\frac{W−N+2P}{S}+1)×(\frac{H−N+2P}{S}+1)×K$.
 
 So, if we want to use another convolution on the matrix with depth K above, we will need to use filters that also have depth K.
+
+Here, number of trainable parameters = $f_h * f_w  + k$. Each filter has its own bias also.
 
 ## Troubleshooting 🌠
 
