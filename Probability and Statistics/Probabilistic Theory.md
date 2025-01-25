@@ -120,12 +120,8 @@ Example:
 
 For a uniform distribution on interval [a, b], the PDF is:
 
-$$
-f(x) = \begin{cases} 
-\frac{1}{b-a}, & a \leq x \leq b \\ 
-0, & \text{otherwise} 
-\end{cases}
-$$
+$$f(x) = \begin{cases} \frac{1}{b-a}, & a \leq x \leq b \\ 
+0, & \text{otherwise} \end{cases}$$
 
 In our case, a = 0 and b = 4, so:
 
@@ -144,7 +140,8 @@ $\sigma^2 = \int_0^4 (x-2)^2\cdot\frac{1}{4}dx = \frac{16}{12} \approx 1.33$
 <summary>Example 2</summary>
 <div style="margin-left: 20px">
 
-$f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 0, & \text{otherwise} \end{cases}$
+$f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 
+0, & \text{otherwise} \end{cases}$
     
 what is the mean value of **X**?
 
@@ -165,7 +162,8 @@ $E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
 <div style="margin-left: 30px">
 X has following density function:
 
-$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 0, & \text{otherwise} \end{cases}$
+$$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 
+0, & \text{otherwise} \end{cases}$$
 
 Find mean and variance?
 
@@ -184,7 +182,8 @@ $\sigma^2 = \int_{0}^{1} (x-2/3)^2 2xdx = \int_0^1 (x^2 + 4/9 - 4x/3) 2x dx = \i
 <summary>Example 4 (find constant and probability)</summary>
 Let X be a continuous random variable with PDF given by:
     
-$f(x) = \begin{cases} cx^2, & |x|<2 \\ 0, & \text{otherwise} \end{cases}$
+$$f(x) = \begin{cases} cx^2, & |x|<2 \\ 
+0, & \text{otherwise} \end{cases}$$
 
 find c and probability(x≥1)?
 
@@ -221,7 +220,8 @@ PDF (Probability density function) is used for continuous random variables. - un
 
 The PDF of the uniform distribution is given by the following equation:
 
- $f(x; a,b) = \begin{cases} \frac{1}{b-a}, & a \le x \le b \\ 0, & \text{otherwise} \end{cases}$ 
+$$f(x; a,b) = \begin{cases} \frac{1}{b-a}, & a \le x \le b \\ 
+0, & \text{otherwise} \end{cases}$$
 
 where $a$ and $b$ are the minimum and maximum values of the distribution.
 
@@ -247,7 +247,7 @@ The answer is 0.25 or 25%, because in a uniform distribution, the probability is
 
 The PMF of the Poisson distribution is given by the following equation:
 
- $f(k; \lambda) = \frac{\lambda^k e^{-\lambda}}{k!}$ 
+$f(k; \lambda) = \frac{\lambda^k e^{-\lambda}}{k!}$ 
 
 where $\lambda$ is the average rate of occurrence of the event of interest and $k$ is the number of occurrences. 
 
@@ -325,7 +325,8 @@ So there's about a 24.6% chance of getting exactly 5 heads in 10 coin flips.
 
 The PMF of the Bernoulli distribution is given by the following equation:
 
- $f(k;p) = \begin{cases} p, & k = 1 \\ 1-p, & k = 0 \end{cases}$ 
+$$f(k;p) = \begin{cases} p, & k = 1 \\ 
+1-p, & k = 0 \end{cases}$$ 
 
 where $p$ is the probability of success.
 
@@ -359,7 +360,7 @@ The **Gaussian distribution**, also known as the normal distribution, is a proba
 
 The probability density function (PDF) of the normal distribution is given by the following equation:
 
- $f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ -\frac{(x - \mu)^2}{2\sigma^2} }$ 
+$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{ -\frac{(x - \mu)^2}{2\sigma^2} }$ 
 
 where $\mu$ is the mean and $\sigma$ is the standard deviation.
 
