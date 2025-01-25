@@ -120,11 +120,17 @@ Example:
 
 For a uniform distribution on interval [a, b], the PDF is:
 
-$$f(x) = \begin{cases} \frac{1}{b-a}, & a \leq x \leq b \\ 0, & \text{otherwise} \end{cases}$$
+$$
+f(x) = \begin{cases} 
+\frac{1}{b-a}, & a \leq x \leq b \\ 
+0, & \text{otherwise} 
+\end{cases}
+$$
 
 In our case, a = 0 and b = 4, so:
 
-$$f(x) = \begin{cases} \frac{1}{4}, & 0 \leq x \leq 4 \\ 0, & \text{otherwise} \end{cases}$$
+$$f(x) = \begin{cases} \frac{1}{4}, & 0 \leq x \leq 4 \\ 
+0, & \text{otherwise} \end{cases}$$
 
 Solution:
 
