@@ -1,5 +1,5 @@
 
-# Probabilistic theory 🔨🔨🔨🔨🔨🔨🔨
+# Probabilistic theory 🔨
 
 In this section we will learn about concepts related to likelihood of events i.e. Probability.
 
@@ -138,10 +138,13 @@ $\sigma^2 = \int_0^4 (x-2)^2\cdot\frac{1}{4}dx = \frac{16}{12} \approx 1.33$
 
 <details>
 <summary>Example 2</summary>
-<div style="margin-left: 20px">
 
-$f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 
-0, & \text{otherwise} \end{cases}$
+$$
+f(x) = \begin{cases} 
+\frac{x^3}{4}, & 0 \leq x \leq 2 \\ 
+0, & \text{otherwise} 
+\end{cases}
+$$
     
 what is the mean value of **X**?
 
@@ -159,7 +162,6 @@ $E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
 
 <details>
 <summary>Example 3 (find mean, variance)</summary>
-<div style="margin-left: 30px">
 X has following density function:
 
 $$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 
