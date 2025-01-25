@@ -492,44 +492,45 @@ Common applications include:
 - Product testing and development
 
 <details>
+
 <summary>Question 1: [t-statistic should be more to reject null hypothesis]</summary>
 
-    A principal at a school claims that the grades of two different sections are equal.
+A principal at a school claims that the grades of two different sections are equal.
 
-    A random sample of 19 students from section A has a mean score of 89 (u1). Another random
-    sample of 10 students from section B has a mean score of 82.3 (2).
+A random sample of 19 students from section A has a mean score of 89 (u1). Another random
+sample of 10 students from section B has a mean score of 82.3 (2).
 
-    With a significance level of 95%, the hypothesis is:
+With a significance level of 95%, the hypothesis is:
 
-    Null hypothesis(HO): u1 = u2
-    Alternate hypothesis(Ha): u1/ u2
+Null hypothesis(HO): u1 = u2
+Alternate hypothesis(Ha): u1/ u2
 
-    The computed T-test statistic is 1.057.
+The computed T-test statistic is 1.057.
 
-    The table below shows the critical values of the T-distribution:
+The table below shows the critical values of the T-distribution:
 
-    | Degrees of Freedom | p=0.05 | p=0.025 | p=0.01 | p=0.005 | p=0.0025 |
-    | --- | --- | --- | --- | --- | --- |
-    | 25 | 1.708 | 2.060 | 2.485 | 2.787 | 3.078 |
-    | 26 | 1.706 | 2.056 | 2.479 | 2.779 | 3.067 |
-    | 27 | 1.703 | 2.052 | 2.473 | 2.771 | 3.057 |
-    | 28 | 1.701 | 2.048 | 2.467 | 2.763 | 3.047 |
-    | 29 | 1.699 | 2.045 | 2.462 | 2.756 | 3.038 |
-    | 30 | 1.697 | 2.042 | 2.457 | 2.750 | 3.030 |
+| Degrees of Freedom | p=0.05 | p=0.025 | p=0.01 | p=0.005 | p=0.0025 |
+| --- | --- | --- | --- | --- | --- |
+| 25 | 1.708 | 2.060 | 2.485 | 2.787 | 3.078 |
+| 26 | 1.706 | 2.056 | 2.479 | 2.779 | 3.067 |
+| 27 | 1.703 | 2.052 | 2.473 | 2.771 | 3.057 |
+| 28 | 1.701 | 2.048 | 2.467 | 2.763 | 3.047 |
+| 29 | 1.699 | 2.045 | 2.462 | 2.756 | 3.038 |
+| 30 | 1.697 | 2.042 | 2.457 | 2.750 | 3.030 |
 
-    Based on the data, which of the following is the MOST appropriate decision?
+Based on the data, which of the following is the MOST appropriate decision?
 
-    Solution:
+Solution:
 
-    Let's analyze this step by step:
+Let's analyze this step by step:
 
-    - The null hypothesis is that the means of both sections are equal (u1 = u2)
-    - The computed T-test statistic is 1.057
-    - With a 95% significance level (α = 0.05), we need to look at the critical value in the p=0.05 column
+- The null hypothesis is that the means of both sections are equal (u1 = u2)
+- The computed T-test statistic is 1.057
+- With a 95% significance level (α = 0.05), we need to look at the critical value in the p=0.05 column
 
-    For this test, since we have 19 students from section A and 10 from section B, the degrees of freedom would be (19 + 10 - 2) = 27. Looking at the table for df=27, the critical value is 1.703.
+For this test, since we have 19 students from section A and 10 from section B, the degrees of freedom would be (19 + 10 - 2) = 27. Looking at the table for df=27, the critical value is 1.703.
 
-    Since our computed T-statistic (1.057) is less than the critical value (1.703), we fail to reject the null hypothesis. This means we don't have enough statistical evidence to conclude that the grades of the two sections are different.
+Since our computed T-statistic (1.057) is less than the critical value (1.703), we fail to reject the null hypothesis. This means we don't have enough statistical evidence to conclude that the grades of the two sections are different.
     
 </details>
 
@@ -590,20 +591,20 @@ Common applications of z-tests include:
 
 <summary>Example (height of students): </summary>
     
-    A principal at a school claims that the heights of students at the school are above average.
-    
-    A random sample of 36 students has a mean height of 73 cm. The mean height of the population is 65 cm with a standard deviation of 10 cm. Given alpha (a) equals to 0.05 and equivalent to a z-score of 1.64. Thus:
-    
-    Null hypothesis: The average height is the same as 65 cm.
-    Alternate hypothesis: The average height is above average.
-    
-    Which of the following is the MOST appropriate action?
-    
-    Solution:
+A principal at a school claims that the heights of students at the school are above average.
+
+A random sample of 36 students has a mean height of 73 cm. The mean height of the population is 65 cm with a standard deviation of 10 cm. Given alpha (a) equals to 0.05 and equivalent to a z-score of 1.64. Thus:
+
+Null hypothesis: The average height is the same as 65 cm.
+Alternate hypothesis: The average height is above average.
+
+Which of the following is the MOST appropriate action?
+
+Solution:
     
 $$Zscore = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}} = \frac{73 - 65}{10 / \sqrt{36}} = \frac{8 * 6}{10} = 4.8$$
     
-    This z-score is significantly higher than the critical value of 1.64 associated with an alpha of 0.05 for a one-tailed test. Since the calculated z-score exceeds the critical value, we reject the null hypothesis in favor of the alternate hypothesis, indicating that the average height is above the population mean of 65 cm. 
+This z-score is significantly higher than the critical value of 1.64 associated with an alpha of 0.05 for a one-tailed test. Since the calculated z-score exceeds the critical value, we reject the null hypothesis in favor of the alternate hypothesis, indicating that the average height is above the population mean of 65 cm. 
 </details>
 
 ## Mean Absolute Error (MAE) in Hypothesis Testing
@@ -676,12 +677,12 @@ where:
 
 <summary>Question [Chi statistic calculate]</summary>
     
-    A survey reveals that Y buys more of a particular product than X, at a ratio of 2:1. An investigation into the distribution of the product among X and Y at a particular shop finds that Y purchased 180 units of the product, while X purchased 120 units.
-    
-    Which of the following is the CORRECT p-value range, assuming the use of chi-square and a
-    significance level of 0.05?
-    
-    The table below shows the critical values of the chi-square distribution:
+A survey reveals that Y buys more of a particular product than X, at a ratio of 2:1. An investigation into the distribution of the product among X and Y at a particular shop finds that Y purchased 180 units of the product, while X purchased 120 units.
+
+Which of the following is the CORRECT p-value range, assuming the use of chi-square and a
+significance level of 0.05?
+
+The table below shows the critical values of the chi-square distribution:
     
 |  | Probability | of | a  | large | value | of | $x^2$ |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -689,20 +690,20 @@ where:
 | 1 | 0 | 0.004 | 0.016 | 0.102 | 0.455 | 1.32 | 2.74 | 3.84 | 5.024 | 6.63 |
 | 2 | 0.02 | 0.103 | 0.211 | 0.575 | 1.386 | 2.77 | 4.61 | 5.99 | 7.378 | 9.21 |
     
-    Calculate chi-square statistic:
-    
-    - Expected: Y = 180, X = 90
-    - Observed: Y = 180, X = 120
+Calculate chi-square statistic:
+
+- Expected: Y = 180, X = 90
+- Observed: Y = 180, X = 120
     
 $χ² = \frac{(180-180)^2}{180} + \frac{(120-90)^2}{90} = 0 + \frac{900}{90} = 10$
     
-    Using the chi-square table with df = 1 (categories - 1):
-    
-    - At α = 0.05, the critical value is 3.84
-    - Since our calculated χ² (10) > critical value (3.84), this is significant
-    - Looking at the table, our value of 10 exceeds even the 0.01 probability value of 6.63
-    
-    Therefore, the p-value is less than 0.01, as our test statistic exceeds all the critical values shown in the table for df = 1.
+Using the chi-square table with df = 1 (categories - 1):
+
+- At α = 0.05, the critical value is 3.84
+- Since our calculated χ² (10) > critical value (3.84), this is significant
+- Looking at the table, our value of 10 exceeds even the 0.01 probability value of 6.63
+
+Therefore, the p-value is less than 0.01, as our test statistic exceeds all the critical values shown in the table for df = 1.
 
 </details>
 
