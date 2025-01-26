@@ -113,9 +113,7 @@ But one true positive (5) becomes a false negative → recall decreases.
 a graphical representation of the trade-off between true positive rate (sensitivity) and false positive rate (1-specificity).
 
 - **True Positive Rate (TPR) or Sensitivity or recall**
-- **False Positive Rate (FPR) or Fall-out:** the proportion of false positives (incorrectly predicted positives) out of the total number of actual negatives.
-    
-    $$FPR = \frac{\text{False Positives}}{\text{False Positives + True Negatives}}$$
+- **False Positive Rate (FPR) or Fall-out:** the proportion of false positives (incorrectly predicted positives) out of the total number of actual negatives. $$FPR = \frac{\text{False Positives}}{\text{False Positives + True Negatives}}$$
     
 
 These metrics are often used in evaluating binary classifiers and are also used to create ROC curves.
@@ -200,7 +198,7 @@ Effect size is a statistical measure that quantifies the strength or magnitude o
 
 Cohen's d is one of the most common effect size measures. It measures the standardized difference between two means:
 
-$$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
+$$d = \frac{\overline{x}_1 - \overline{x}_2}{s_{\text{pooled}}}$$
 
 $$s_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}$$
 

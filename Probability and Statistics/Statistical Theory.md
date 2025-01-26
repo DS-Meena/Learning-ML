@@ -18,7 +18,7 @@ Mean is also known as the expected value of a random variable. In probability th
 
 For a discrete random variable X with possible values x₁, x₂, ..., xₙ and corresponding probabilities p₁, p₂, ..., pₙ, the expected value is calculated using the same formula as the mean:
 
-$E(X) = \sum_{i=1}^{n} x_i p_i$
+$$E(X) = \sum_{i=1}^{n} x_i p_i$$
 
 ### Median 🧘‍♂️
 
@@ -46,7 +46,7 @@ Note: A distribution can be:
 
 The variance measures how spread out the data is. It is calculated by taking the difference between each data point and the mean, squaring that difference, and then taking the average of all the squared differences. 
 
-$Var(X) = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2$
+$$Var(X) = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2$$
 
 where $x_i$ are the individual values in the dataset, $\bar{x}$ is the mean, and $n$ is the number of values in the dataset.
 
@@ -56,7 +56,7 @@ A high variance indicates that the data is widely spread out, while a low varian
 
 The standard deviation is the square root of the variance. It is a commonly used statistical measure that is useful for understanding the spread of the data.
 
-$SD = \sqrt{Var(X)} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}$
+$$SD = \sqrt{Var(X)} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}$$
 
 where $x_i$ are the individual values in the dataset, $\bar{x}$ is the mean, and $n$ is the number of values in the dataset.
 
@@ -453,7 +453,7 @@ A one-sample t-test is used to determine whether a sample mean significantly dif
 
 The test statistic is calculated as:
 
-$t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}$
+$$t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}$$
 
 where:
 
@@ -493,7 +493,7 @@ Common applications include:
 
 <details>
 
-<summary>Question 1: [t-statistic should be more to reject null hypothesis]</summary>
+<summary>Question 1: [t-statistic should be more to reject null hypothesis] ❓</summary>
 
 A principal at a school claims that the grades of two different sections are equal.
 
@@ -520,7 +520,7 @@ The table below shows the critical values of the T-distribution:
 
 Based on the data, which of the following is the MOST appropriate decision?
 
-Solution:
+**Solution ✅**
 
 Let's analyze this step by step:
 
@@ -548,7 +548,7 @@ A z-test is a statistical test used to determine whether a sample mean is signif
 
 The test statistic is calculated as:
 
-$z = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}}$
+$$z = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}}$$
 
 where:
 
@@ -589,7 +589,7 @@ Common applications of z-tests include:
 
 <details>
 
-<summary>Example (height of students): </summary>
+<summary>Example (height of students) ❓</summary>
     
 A principal at a school claims that the heights of students at the school are above average.
 
@@ -600,7 +600,7 @@ Alternate hypothesis: The average height is above average.
 
 Which of the following is the MOST appropriate action?
 
-Solution:
+**Solution ✅**
     
 $$Zscore = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}} = \frac{73 - 65}{10 / \sqrt{36}} = \frac{8 * 6}{10} = 4.8$$
     
@@ -613,7 +613,7 @@ Mean Absolute Error is a statistical measure used to evaluate the accuracy of hy
 
 The formula for MAE is:
 
-$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$
+$$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
 
 where:
 
