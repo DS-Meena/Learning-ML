@@ -679,8 +679,7 @@ where:
     
 A survey reveals that Y buys more of a particular product than X, at a ratio of 2:1. An investigation into the distribution of the product among X and Y at a particular shop finds that Y purchased 180 units of the product, while X purchased 120 units.
 
-Which of the following is the CORRECT p-value range, assuming the use of chi-square and a
-significance level of 0.05?
+Which of the following is the CORRECT p-value range, assuming the use of chi-square and a significance level of 0.05?
 
 The table below shows the critical values of the chi-square distribution:
     
@@ -700,20 +699,21 @@ $χ² = \frac{(180-180)^2}{180} + \frac{(120-90)^2}{90} = 0 + \frac{900}{90} = 1
 Using the chi-square table with df = 1 (categories - 1):
 
 - At α = 0.05, the critical value is 3.84
-- Since our calculated χ² (10) > critical value (3.84), this is significant
+- Since our calculated χ² (10) > critical value (3.84), this is can't be the correct p-value range.
 - Looking at the table, our value of 10 exceeds even the 0.01 probability value of 6.63
 
 Therefore, the p-value is less than 0.01, as our test statistic exceeds all the critical values shown in the table for df = 1.
 
 </details>
 
-> **Quick Guide for Hypothesis Testing Rejection Rules:**
-> 1. **t-test and z-test:**
-> - Reject H₀ when |test statistic| > critical value
-> - OR when p-value < significance level (α)
-> 2. **Chi-square test:**
-> - Reject H₀ when χ² > critical value
-> - OR when p-value < significance level (α)
+### Quick Guide for Hypothesis Testing Rejection Rules
+
+1. **t-test and z-test:**
+    - Reject H₀ when |test statistic| > critical value
+    - OR when p-value < significance level (α)
+2. **Chi-square test:**
+    - Reject H₀ when χ² > critical value
+    - OR when p-value < significance level (α)
 
 The key to remembering:
 
