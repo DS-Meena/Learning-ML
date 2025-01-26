@@ -198,7 +198,7 @@ Effect size is a statistical measure that quantifies the strength or magnitude o
 
 Cohen's d is one of the most common effect size measures. It measures the standardized difference between two means:
 
-$$d = \frac{\overline{x}_1 - \overline{x}_2}{s_{\text{pooled}}}$$
+$$d = \frac{x̄_1 - x̄_2} {s_{\text{pooled}}}$$
 
 $$s_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}$$
 
@@ -244,7 +244,7 @@ def cohens_d(group1, group2):
     
     Let's calculate Cohen's d using the formula:
     
-    $$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
+    $$d = \frac{x̄_1 - x̄_2}{s_{\text{pooled}}}$$
     
     First, calculate the pooled standard deviation:
     

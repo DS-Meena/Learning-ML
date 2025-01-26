@@ -136,49 +136,45 @@ $\mu = \int_0^4 x\cdot\frac{1}{4}dx = \frac{1}{4}[\frac{x^2}{2}]_0^4 = \frac{16-
 
 $\sigma^2 = \int_0^4 (x-2)^2\cdot\frac{1}{4}dx = \frac{16}{12} \approx 1.33$
 
-<details>
-<summary>Example 2</summary>
 
-$$
-f(x) = \begin{cases} 
-\frac{x^3}{4}, & 0 \leq x \leq 2 \\ 
-0, & \text{otherwise} 
-\end{cases}
-$$
+- **Example 2️⃣**
+
+    $$f(x) = \begin{cases} \frac{x^3}{4}, & 0 \leq x \leq 2 \\ 
+    0, & \text{otherwise} \end{cases}$$
+        
+    what is the mean value of **X**?
+
+    **Solution ✅**
+
+    $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
+
+    $E(X) = \int_{0}^{2} xf(x)dx$
+
+    $E(X) = \int_{0}^{2} x \frac{x^3}4dx$ ⇒ $E(X) = \int_{0}^{2} \frac{x^4}4dx$
+
+    $E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
+
+
+- **Example 3️⃣ (find mean, variance) ❓**
+
+    X has following density function:
+
+    $$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 
+    0, & \text{otherwise} \end{cases}$$
+
+    Find mean and variance?
     
-what is the mean value of **X**?
+    **Solution ✅**
+    
+    $\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
 
-Solution:
+    $\mu = \int_{0}^{1}x f(x) dx = \int_{0}^{1} x * 2x dx = \int_{0}^{1} 2x^2 dx = \frac{2}{3} [x^3]_0^1 = \frac{2}{3}$
 
-$\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
+    variance
 
-$E(X) = \int_{0}^{2} xf(x)dx$
+    $\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$
 
-$E(X) = \int_{0}^{2} x \frac{x^3}4dx$ ⇒ $E(X) = \int_{0}^{2} \frac{x^4}4dx$
-
-$E(X) = \frac{1}{4.5}[x^5]_0^2 = \frac{32-0}{20} = 1.6$
-
-</details>
-
-<details>
-<summary>Example 3 (find mean, variance)</summary>
-X has following density function:
-
-$$f(x) = \begin{cases} 2x, & 0 \leq x \leq 1 \\ 
-0, & \text{otherwise} \end{cases}$$
-
-Find mean and variance?
-
-$\mu = E(X) = \int_{-\infty}^{\infty} xf(x)dx$
-
-$\mu = \int_{0}^{1}x f(x) dx = \int_{0}^{1} x * 2x dx = \int_{0}^{1} 2x^2 dx = \frac{2}{3} [x^3]_0^1 = \frac{2}{3}$
-
-variance
-
-$\sigma^2 = E[(X-\mu)^2] = \int_{-\infty}^{\infty} (x-\mu)^2f(x)dx$
-
-$\sigma^2 = \int_{0}^{1} (x-2/3)^2 2xdx = \int_0^1 (x^2 + 4/9 - 4x/3) 2x dx = \int_0^1 2x^3 + \frac{8x}{9} - \frac{8x^2}{3}dx = \frac{2}{4}[x^4]_0^1 + \frac{8}{9}[x^2]_0^1 - \frac{4}{3}[x^3]_0^1 = 2/4 + 8/18 - 8/9 = \frac{18+16-32}{36} = \frac{1}{18}$
-</details>    
+    $\sigma^2 = \int_{0}^{1} (x-2/3)^2 2xdx = \int_0^1 (x^2 + 4/9 - 4x/3) 2x dx = \int_0^1 2x^3 + \frac{8x}{9} - \frac{8x^2}{3}dx = \frac{2}{4}[x^4]_0^1 + \frac{8}{9}[x^2]_0^1 - \frac{4}{3}[x^3]_0^1 = 2/4 + 8/18 - 8/9 = \frac{18+16-32}{36} = \frac{1}{18}$
 
 <details>
 <summary>Example 4 (find constant and probability)</summary>
