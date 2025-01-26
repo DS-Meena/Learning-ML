@@ -39,13 +39,13 @@ plt.show()
 
 the proportion of correct predictions out of the total number of predictions.
 
-**$Accuracy = \frac {\text{(number of correct predictions)}} {\text{(total number of predictions)}}$**
+$$Accuracy = \frac {\text{(number of correct predictions)}} {\text{(total number of predictions)}}$$
 
 ### **Precision**
 
 the proportion of true positives (correctly predicted positives) out of the total number of predicted positives.
 
-$Precision = \frac{\text{True Positives}}{\text{True Positives + False Positives}}$
+$$Precision = \frac{\text{True Positives}}{\text{True Positives + False Positives}}$$
 
 Example → Spam filtering (**false positive should be less**). 
 
@@ -64,7 +64,7 @@ Use when cost of false positive is high.
 
 the proportion of true positives (correctly predicted positives) out of the total number of actual positives.
 
-$Recall = \frac{\text{True Positives}}{\text{True Positives + False Negatives}}$
+$$Recall = \frac{\text{True Positives}}{\text{True Positives + False Negatives}}$$
 
 Example → Medical diagnosis (**false negative should be less**)
 
@@ -84,7 +84,7 @@ a weighted average of precision and recall, where a score of 1.0 represents perf
 
 The F1 score is the harmonic mean of precision and recall, defined as:
 
-$F1 = \frac{2}{\frac{1}{precision} + \frac{1}{recall}} = 2 * \frac{precision * recall}{precision + recall}$
+$$F1 = \frac{2}{\frac{1}{precision} + \frac{1}{recall}} = 2 * \frac{precision * recall}{precision + recall}$$
 
 F1 score would be high only when both precision and recall are high.
 
@@ -115,7 +115,7 @@ a graphical representation of the trade-off between true positive rate (sensitiv
 - **True Positive Rate (TPR) or Sensitivity or recall**
 - **False Positive Rate (FPR) or Fall-out:** the proportion of false positives (incorrectly predicted positives) out of the total number of actual negatives.
     
-    $FPR = \frac{\text{False Positives}}{\text{False Positives + True Negatives}}$
+    $$FPR = \frac{\text{False Positives}}{\text{False Positives + True Negatives}}$$
     
 
 These metrics are often used in evaluating binary classifiers and are also used to create ROC curves.
@@ -158,7 +158,7 @@ For example,
 
 A residual is the difference between an observed value and its corresponding predicted value in a regression model:
 
-$Residual = Observed\space Value - Predicted\space Value$
+$$Residual = Observed\space Value - Predicted\space Value$$
 
 ## Examining Residuals
 
@@ -200,9 +200,9 @@ Effect size is a statistical measure that quantifies the strength or magnitude o
 
 Cohen's d is one of the most common effect size measures. It measures the standardized difference between two means:
 
-$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$
+$$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
 
-$s_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}$
+$$s_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}$$
 
 where:
 
@@ -242,11 +242,11 @@ def cohens_d(group1, group2):
     
     What is the result of Cohen's d in the above scenario?
     
-    **Solution:**
+    **Solution ✅**
     
     Let's calculate Cohen's d using the formula:
     
-    $d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$
+    $$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
     
     First, calculate the pooled standard deviation:
     
@@ -267,13 +267,13 @@ R-squared is a statistical measure of how close the data are to the fitted regre
 
 The formula for R² is:
 
-$R^2 = 1 - \frac{\sum(y_i - \hat{y}_i)^2}{\sum(y_i - \bar{y})^2}$
+$$R^2 = 1 - \frac{\sum(y_i - \hat{y}_i)^2}{\sum(y_i - \bar{y})^2}$$
 
 Where:
 
-- y_i are the actual values
-- ŷ_i are the predicted values
-- ȳ is the mean of the actual values
+- $y_i$ are the actual values
+- $ŷ_i$ are the predicted values
+- $ȳ$ is the mean of the actual values
 
 ```python
 from sklearn.metrics import r2_score

@@ -651,9 +651,7 @@ The chi-square distribution is a continuous probability distribution that is use
 
 **Formula:**
 
-$$
-\chi^2 = \sum\frac{(O_i - E_i)^2}{E_i}
-$$
+$$\chi^2 = \sum\frac{(O_i - E_i)^2}{E_i}$$
 
 where:
 
@@ -675,7 +673,7 @@ where:
 
 <details>
 
-<summary>Question [Chi statistic calculate]</summary>
+<summary>Question [Chi statistic calculate] ❓</summary>
     
 A survey reveals that Y buys more of a particular product than X, at a ratio of 2:1. An investigation into the distribution of the product among X and Y at a particular shop finds that Y purchased 180 units of the product, while X purchased 120 units.
 
@@ -688,7 +686,9 @@ The table below shows the critical values of the chi-square distribution:
 | Degrees of Freedom (df) | 0.99 | 0.95 | 0.9 | 0.75 | 0.5 | 0.25 | 0.1 | 0.05 | 0.025 | 0.01 |
 | 1 | 0 | 0.004 | 0.016 | 0.102 | 0.455 | 1.32 | 2.74 | 3.84 | 5.024 | 6.63 |
 | 2 | 0.02 | 0.103 | 0.211 | 0.575 | 1.386 | 2.77 | 4.61 | 5.99 | 7.378 | 9.21 |
-    
+
+**Solution ✅**
+
 Calculate chi-square statistic:
 
 - Expected: Y = 180, X = 90
