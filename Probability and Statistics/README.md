@@ -1,3 +1,5 @@
+# Probability and Statistics
+
 Probability helps deal with uncertainty. You should understand conditional probability, Bayes' Theorem, probability distributions, expectation, variance, and standard deviation.
 
 In this section we will learn about Probability and statistics, that includes:
@@ -14,5 +16,3 @@ To add drop down section in markdown files use following HTML tags:
 Your content
 </details>
 ```
-
-To add indentation inside a section: `<div style="margin-left: 20px">`
