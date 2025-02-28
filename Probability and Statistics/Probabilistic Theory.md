@@ -82,6 +82,35 @@ Where:
 
 - The B₁, B₂, ..., Bₙ are mutually exclusive and exhaustive events
 
+<details>
+<summary>Example of using Total probability ❓</summary>
+A text classification algorithm classifies articles into the following categories: academic, persuasive, and informal. Consider the findings of the algorithm:
+
+- There is a 60% chance that an article is classified as academic and 30% chance that it is classified as persuasive.
+- If the article is classified as academic, there is 80% chance that it is scientific.
+- If the article is classified as informal, there is 80% chance that it is not scientific.
+- Half of the articles classified as persuasive are scientific.
+
+If an article is randomly selected, what is the probability that the article is scientific?
+
+**Solution ->** 
+
+- P(A) = 0.60
+- P(P) = 0.30
+- P(I) = 0.10 (since probabilities must sum to 1)
+- P(S|A) = 0.80
+- P(not S|I) = 0.80, so P(S|I) = 0.20
+- P(S|P) = 0.50
+
+**Using the law of total probability:**
+
+P(scientific) = P(scientific|academic) × P(academic) + P(scientific|persuasive) × P(persuasive) + P(scientific|informal) × P(informal)
+
+$P(S) = (0.80 × 0.60) + (0.50 × 0.30) + (0.20 × 0.10)
+= 0.48 + 0.15 + 0.02
+= 0.65$
+</details>
+
 # Probability density function (PDF) 🦷
 
 A PDF (Probability Density Function) is a mathematical function that:

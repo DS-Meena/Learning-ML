@@ -426,9 +426,9 @@ Active prompting is particularly effective when:
 
 💡 **Pro Tip**: Combine active prompting with other techniques like role-based or chain-of-thought prompting for even more precise control over AI outputs.
 
-## Dynamic Prompt Engineering Techniques
+## Automatic Prompt Engineering 🤖
 
-Dynamic prompt engineering involves creating adaptable prompts that can automatically adjust based on context, user input, and changing requirements. Here's how to implement automatic prompt engineering for dynamic situations:
+Automatic prompt engineering involves creating adaptable prompts that can automatically adjust based on context, user input, and changing requirements. Here's how to implement automatic prompt engineering for dynamic situations:
 
 ### 1. Template-Based Generation
 
@@ -450,65 +450,57 @@ Template Example:
 
 ### 2. Feedback Loop Implementation
 
-- **Response Analysis:** Automatically evaluate AI responses for quality and relevance
-- **Prompt Refinement:** Adjust prompt parameters based on success metrics
-- **Performance Tracking:** Monitor and log effective prompt patterns
+1. Generate Candidate prompts based on examples.
+2. Executing and evaluating these prompts with the target model.
+3. Then selecting effective prompts based on evaluation scores.
 
-### 3. Adaptive Learning System
+## Self-Consistency Techniques 👽
 
-Implement a system that learns from successful interactions:
+Self-consistency in AI responses refers to **ensuring that the model's outputs remain logically coherent and consistent** across multiple generations. 
 
-```jsx
-System Components:
-1. Success Metric Tracking
-2. Prompt Version Control
-3. A/B Testing Framework
-4. Performance Analytics
-5. Automatic Optimization Rules
-```
+Here are key techniques to check if the model is self-consistent:
 
-💡 **Pro Tip**: Implement a monitoring system that tracks prompt performance metrics and automatically suggests optimizations based on historical success rates.
+### 1. Rephrasing Prompts
 
-## Self-Consistency Techniques
+Rephrasing prompts involves reformulating the same question in different ways to validate responses and ensure consistency. This technique helps:
 
-Self-consistency in AI responses refers to ensuring that the model's outputs remain logically coherent and consistent across multiple generations. Here are key techniques to achieve this:
+- Verify the accuracy of responses across different phrasings
+- Identify potential biases in specific formulations
+- Enhance the robustness of the output
 
-### 1. Structured Verification Prompts
+Example approaches include changing:
 
-```jsx
-Initial Response: [AI's first answer]
-Verification Steps:
-1. Check for logical consistency
-2. Verify factual alignment
-3. Confirm internal coherence
-4. Cross-reference with previous statements
-Final Response: [Validated answer]
-```
+- Word order
+- Sentence structure
+- Vocabulary while maintaining meaning
 
-### 2. Multi-Path Reasoning
+### 2. Using Follow-up Prompts
 
-- **Generate Multiple Solutions:** Ask the model to provide several different approaches to the same problem
-- **Compare Outcomes:** Cross-validate different reasoning paths
-- **Select Most Consistent:** Choose the answer that appears most frequently or is most logically sound
+Follow-up prompts are sequential questions that help:
 
-Example implementation:
+- Validate initial responses
+- Drill down into specific details
+- Cross-reference information for consistency
 
-```jsx
-Prompt Template:
-"Solve this problem using three different approaches:
-1. [Approach A]
-2. [Approach B]
-3. [Approach C]
-Then compare results and explain which is most reliable and why."
-```
+Common follow-up techniques include:
 
-### 3. Consistency Validation Chain
+- Asking for explanations of previous responses
+- Requesting examples or counterexamples
+- Challenging assumptions in the initial response
 
-- **Sequential Verification:** Use follow-up prompts to verify previous responses
-- **Cross-Check Mechanisms:** Implement systematic checks for contradictions
-- **Error Detection:** Include specific prompts to identify logical inconsistencies
+### 3. Implementing Checksums or Markers
 
-💡 **Pro Tip**: Always include explicit instructions for the model to review its own responses for consistency before providing the final answer.
+Checksums and markers are validation techniques that:
+
+- Ensure completion of all required components
+- Verify the integrity of the response
+- Track the flow of information
+
+Implementation methods include:
+
+- Adding numerical markers to track sequence
+- Using specific formatting patterns
+- Implementing verification steps at key points
 
 ## Generated Knowledge Prompting
 
@@ -570,13 +562,15 @@ Few-shot learning is particularly effective when:
 
 ## ReAct (Reasoning + Acting) Technique
 
-ReAct is an advanced prompting technique that combines reasoning and acting to produce more reliable and refined responses. It follows a systematic approach of thought, action, and observation.
+ReAct is an advanced prompting technique that **combines reasoning and acting** to produce more reliable and refined responses. 😅 
 
-The ReAct process consists of three main components:
+When implementing ReAct, encourage the model to explain its thinking process before taking actions, making it easier to identify and correct potential issues in the reasoning chain.
 
-- **Reasoning (Thought):** The model explicitly states its reasoning process and planned approach
-- **Acting:** Takes specific actions based on the reasoning
-- **Observation:** Analyzes the results and adjusts the approach if needed
+It follows a systematic approach of thought, action, and observation:
+
+1. **Reasoning (Thought):** The model explicitly states its reasoning process, using this identify the limitation of the AI response.
+2. **Acting:** Takes specific actions based on the reasoning.
+3. **Observation:** Analyzes the results and adjusts the approach if needed
 
 Example implementation:
 
@@ -601,5 +595,3 @@ Benefits of the ReAct technique:
 - **Improved Accuracy:** Through systematic evaluation and refinement
 - **Transparent Decision-Making:** Clear reasoning process visible to users
 - **Adaptable Responses:** Can adjust based on intermediate observations
-
-💡 **Pro Tip**: When implementing ReAct, encourage the model to explain its thinking process before taking actions, making it easier to identify and correct potential issues in the reasoning chain.
