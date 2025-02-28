@@ -154,6 +154,32 @@ Where:
 > Example 🌟: If you have 10 different books and want to arrange 3 of them on a shelf, the number of possible arrangements is: P(10,3) = 10!/(10-3)! = 10!/(7)! = 720 different arrangements
 
 
+<details>
+<summary>Probabillity using permutation ❓</summary>
+
+Five artists (A, B, C, D and E) will perform back-to-back during a music festival. What is the probability that A will perform second and D will perform last?
+
+Solution:
+
+"_ _ _ _ _"
+
+Total ways of arragements of 5 artists: 5!
+
+"_ A _ _ D"
+
+If position of 2 artists if fixed, ways to arrange remaining 3 artists on 3 positions: 3!
+
+
+$Probability = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}}$
+$= \frac{3!}{5!}$
+$= \frac{6}{120}$
+$ = \frac{1}{20}$ 
+= 0.05 or 5%
+
+</details>
+
+<br>
+
 **Permutations with Repetition 🔄**
 
 When we have n objects where some items are repeated, the formula becomes:

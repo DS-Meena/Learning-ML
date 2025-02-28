@@ -70,6 +70,48 @@ Where:
 - P(B | A) is the conditional probability of B given A,
 - P(A) and P(B) are the probabilities of A and B respectively.
 
+<details>
+<summary>Using Bayes Theorem and law of total probability together 👽</summary>
+
+Bag I contains 4 white and 6 black balls while Bag II contains 4 white and 3 black balls. One ball is drawn at random from one of the bags (with 50% probability for each bag) and it is found to be black. Find the probability that it was drawn from Bag I?
+
+**Solution: ⭐**
+
+- $B_1$ event of choosing bag 1
+- $B_2$ event of choosing bag 2
+- $A$ event of drawing a black ball
+- $P(A|B_1) = 6/10 = 0.6$
+- $P(A|B_2) = 3/7 = 0.429$
+- $P(B_1) = P(B_2) = 0.5$
+
+We know that:
+
+**Using conditional probability:**
+$$
+P(B_1|A) = \frac{P(A\cap B_1)}{P(A) }
+$$
+
+**Using Bayes Theorem:**
+$$
+P(B_1|A) = \frac{P(A|B_1) \cdot P(B_1)}{P(A)}
+$$
+
+Using **total probability** we can find the $P(A)$:
+
+$P(A) = P(A|B_1) \cdot P(B_1) + P(A|B_2) \cdot P(B_2)$
+
+$P(A) = 0.6 \times 0.5 + 0.429 \times 0.5 = 0.3 + 0.2145 = 0.5145$
+
+Substituting the values in Bayes theorem formula, we get:
+
+$$
+P(B_1|A) = \frac{0.6 \times 0.5}{0.5145} = \frac{0.3}{0.5145} \approx 0.583
+$$
+
+Therefore, the probability that the black ball was drawn from Bag I is approximately 0.583 or 58.3%.
+
+</details>
+
 ## Total Probability 😲
 
 The law of total probability is a fundamental rule that allows us to calculate the probability of an event by considering all the different ways it can occur. It breaks down the probability into mutually exclusive scenarios.
@@ -343,12 +385,11 @@ where:
 > Using the binomial formula with n=10 (trials), k=5 (successes), and p=0.5 (probability of heads):
 P(X=5) = C(10,5) × (0.5)^5 × (0.5)^5 = 252/1024 ≈ 0.246
 
+So there's about a 24.6% chance of getting exactly 5 heads in 10 coin flips.
 
 So in short, the binomial distribution is a way to calculate the probability of a certain number of successes in a fixed number of trials, when there are only two possible outcomes.
 
 ### **4. Bernoulli distribution 🍓**
-
-So there's about a 24.6% chance of getting exactly 5 heads in 10 coin flips.
 
 The PMF of the Bernoulli distribution is given by the following equation:
 
@@ -357,9 +398,9 @@ $$f(k;p) = \begin{cases} p, & k = 1 \\
 
 where $p$ is the probability of success.
 
-Means or expected value = 1*p = p
+$\text{Means or expected value} = 1*p = p$
 
-Variance = p * (1-p)
+$\text{Variance} = p * (1-p)$
 
 Here's an example of using the Bernoulli distribution:
 
