@@ -1,6 +1,12 @@
 # Learning-ML
 This repository is related to ML projects, whose purpose is to learn ML while realizing the concepts.
 
+## Tricks
+
+- Matplot Visualization in VS Code
+
+    VS Code has an interactive window that supports plot visualization. Select your code and right-click, then choose "Run Selection/Line in Python Interactive Window".
+
 ## Always remember virtualenv 🏞️
 
 Create a virtual environment using command line:
