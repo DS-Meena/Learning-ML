@@ -10,7 +10,7 @@ Image convolution is a image filtering technique.
 
 Suppose we have N x N matrices A and B. We define $A \circ B$ as follows, where $\circ$ is the convolutional operator. 
 
-$(A\circ B)_{i,j} =A_{i,j} B_{i,j}$
+$$(A\circ B)_{i,j} =A_{i,j} B_{i,j}$$
 
 The activation of a filter on an image of the same size is found by applying the convolutional operator to the filter and the image, then taking the sum of the entries in the resulting matrix, adding the filter's bias, and applying an activation function to it. 
 
@@ -86,7 +86,7 @@ Size of resultant feature map = $(\frac {W - f_w}{S_w} + 1) * (\frac {H - f_h}{S
 
 ## Padding 🏓
 
-We pad the image on sides so that we can catch partial objects.
+We pad the image on sides so that we can catch partial objects and **avoid shrinking the width and height** of the input as it passes through convolutional layers.
 
 ![Fig: applied p=1 on image](images/image.png)
 
