@@ -110,7 +110,7 @@ But one true positive (5) becomes a false negative → recall decreases.
 
 ### **ROC Curve:** (Receiver operating characteristic)
 
-a graphical representation of the trade-off between true positive rate (sensitivity) and false positive rate (1-specificity).
+a graphical representation of the trade-off between true positive rate (sensitivity) and false positive rate (`FPR = 1-specificity`).
 
 - **True Positive Rate (TPR) or Sensitivity or recall**
 - **False Positive Rate (FPR) or Fall-out:** the proportion of false positives (incorrectly predicted positives) out of the total number of actual negatives. $$FPR = \frac{\text{False Positives}}{\text{False Positives + True Negatives}}$$

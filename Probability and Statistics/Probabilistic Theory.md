@@ -70,10 +70,7 @@ Where:
 - P(B | A) is the conditional probability of B given A,
 - P(A) and P(B) are the probabilities of A and B respectively.
 
-<details>
-<summary>Using Bayes Theorem and law of total probability together 👽</summary>
-
-Bag I contains 4 white and 6 black balls while Bag II contains 4 white and 3 black balls. One ball is drawn at random from one of the bags (with 50% probability for each bag) and it is found to be black. Find the probability that it was drawn from Bag I?
+**E.g.** Bag I contains 4 white and 6 black balls while Bag II contains 4 white and 3 black balls. One ball is drawn at random from one of the bags (with 50% probability for each bag) and it is found to be black. Find the probability that it was drawn from Bag I ❓
 
 **Solution: ⭐**
 
@@ -109,8 +106,6 @@ P(B_1|A) = \frac{0.6 \times 0.5}{0.5145} = \frac{0.3}{0.5145} \approx 0.583
 $$
 
 Therefore, the probability that the black ball was drawn from Bag I is approximately 0.583 or 58.3%.
-
-</details>
 
 ## Total Probability 😲
 
